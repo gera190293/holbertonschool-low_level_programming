@@ -10,13 +10,14 @@ int main(void)
 
 	for (m = 48; m <= 57; m++)
 	{
-		putchar(m);
 		for (n = 48; n <= 57; n++)
 		{
+			putchar(m);
 			putchar(n);
+			putchar(44);
+			putchar(32);
 		}
-		putchar(44);
-		putchar(32);
 	}
+	putchar('\0');
 	return (0);
 }
