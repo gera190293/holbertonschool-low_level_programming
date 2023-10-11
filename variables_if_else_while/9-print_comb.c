@@ -13,7 +13,7 @@ int main(void)
 		putchar(m);
 		if (m == 57)
 		{
-			break
+			break;
 			putchar('\n');
 		}
 		putchar(44);
