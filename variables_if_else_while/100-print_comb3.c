@@ -16,12 +16,12 @@ int main(void)
 			putchar(n);
 			if (m == 57)
 			{
+				putchar('\n');
 				break;
 			}
 			putchar(44);
 			putchar(32);
 		}
 	}
-	putchar('\0');
 	return (0);
 }
