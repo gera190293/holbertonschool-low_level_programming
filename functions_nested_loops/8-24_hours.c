@@ -11,7 +11,7 @@ void jack_bauer(void)
 
 	h = 0;
 	m = 0;
-	while (h < 23)
+	while (h <= 23)
 	{
 		for (m = 0; m <= 59; m++)
 		{
