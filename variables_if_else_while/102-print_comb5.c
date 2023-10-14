@@ -6,12 +6,22 @@
  */
 int main(void)
 {
-	int m;
+	int m, n;
 
 	for (m = 0; m <= 99; m++)
 	{
-		putchar(m / 10 + '0');
-		putchar(m % 10 + '0');
+		for (n = m; n <= 99; n++)
+		{
+			putchar(m / 10 + '0');
+			putchar(m % 10 + '0');
+			putchar(' ');
+			putchar(n / 10 + '0');
+			putchar(n % 10 + '0');
+			if (m <= 99)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 	}
 	return (0);
 }
