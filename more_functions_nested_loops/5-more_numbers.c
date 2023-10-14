@@ -4,7 +4,7 @@
  */
 void more_numbers(void)
 {
-	int n = 25;
+	char n = "25";
 
 		_putchar (n / 10);
 		_putchar (n % 10);
