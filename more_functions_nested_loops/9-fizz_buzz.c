@@ -1,6 +1,11 @@
 #include "main.h"
 #include <stdio.h>
 /**
+ *main - main function
+ */
+void main(void);
+
+/**
  *fizz_buzz - print numbers from 1 to 100, but if is multiple of 3 or 5 print Fizz or Buzz
  *
  *
