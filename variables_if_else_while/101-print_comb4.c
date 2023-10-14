@@ -7,7 +7,7 @@ int main(void)
 {
 	int m, n, p;
 
-	for (m = 49; m <= 57; m++)
+	for (m = 50; m <= 57; m++)
 	{
 		for (n = m; n <= 57; n++)
 		{
