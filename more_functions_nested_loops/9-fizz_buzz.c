@@ -2,9 +2,11 @@
 #include <stdio.h>
 /**
  *main - main function
+ *Return: 0
  */
-void main(void)
+int main(void)
 {
+	return (0);
 }
 
 /**
