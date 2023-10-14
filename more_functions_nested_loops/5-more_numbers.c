@@ -14,7 +14,7 @@ void more_numbers(void)
 			if (n / 10 == 0)
 				continue;
 			else
-				_putcahr (n / 10 + '0')
+				_putchar (n / 10 + '0');
 			_putchar (n % 10 + '0');
 		}
 		_putchar ('\n');
