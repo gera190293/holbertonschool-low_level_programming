@@ -7,13 +7,13 @@ int main(void)
 {
 	int m, n, p;
 
-	for (m = 49; m <= 57; m ++)
+	for (m = 49; m <= 57; m++)
 	{
 		for (n = m; n <= 57; n++)
 		{
 			for (p = n; p <= 57; p++)
 			{
-				putchar(m - 1);
+				putchar(m - 2);
 				putchar(n - 1);
 				putchar(p);
 				if (m <= 56)
