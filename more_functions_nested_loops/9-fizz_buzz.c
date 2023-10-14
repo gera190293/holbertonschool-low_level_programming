@@ -21,7 +21,7 @@ void fizz_buzz(void)
 		}
 		else
 		{
-			printf(i);
+			printf("%d", i);
 		}
 	}
 }
