@@ -18,6 +18,10 @@ int main(void)
 		{
 			printf("Buzz ");
 		}
+		else if (i % 15 == 0);
+		{
+			printf("FizzBuzz");
+		}
 		else
 		{
 			printf("%d ", i);
