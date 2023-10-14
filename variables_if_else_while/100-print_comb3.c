@@ -10,18 +10,15 @@ int main(void)
 
 	for (m = 48; m <= 57; m++)
 	{
-		for (n = m + 1; n <= 57; n++)
+		for (n = m; n <= 57; n++)
 		{
-			putchar(m);
+			putchar(m - 1);
 			putchar(n);
-			if (n == 57)
+			if (m <= 57)
 			{
-				break;
+				putchar(',');
+				puthcar(' ');
 			}
-			putchar(44);
-			putchar(32);
 		}
 	}
-	putchar('\n');
-	return (0);
 }
