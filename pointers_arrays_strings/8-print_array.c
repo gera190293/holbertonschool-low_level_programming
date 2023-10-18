@@ -1,0 +1,18 @@
+#include "main.h"
+#include <stdio.h>
+/**
+ *print_array - print n elements of an array
+ *@a: string
+ *@n: numbers of elements of the array
+ *
+ */
+void print_array(int *a, int n)
+{
+	int i = 0;
+
+	while (a[i] <= a[n])
+	{
+		printf("%d, ", a[i]);
+		i++;
+	}
+}
