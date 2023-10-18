@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- *puts2 - print the half of a string
+ *puts_half - print the half of a string
  *@str: string
  *
  *
  *
  */
-void puts2(char *str)
+void puts_half(char *str)
 {
 	int i = 0;
 	int l;
