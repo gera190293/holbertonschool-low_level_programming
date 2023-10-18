@@ -10,22 +10,22 @@ void print_array(int *a, int n)
 {
 	int i = 0;
 
-	while (i < n)
+	if (n > 0)
 	{
-		if (i < (n - 1))
+		while (i < n)
 		{
-			printf("%d, ", a[i]);
-			i++;
-		}
-		else if (n < 0)
-		{
-			_putchar(10);
-			_putchar(10);
-		}
-		else
-		{
-			printf("%d\n", a[i]);
-			i++;
+			if (i < (n - 1))
+			{
+				printf("%d, ", a[i]);
+				i++;
+			}
+			else
+			{
+				printf("%d\n", a[i]);
+				i++;
+			}
 		}
 	}
+	else
+		printf('\n');
 }
