@@ -17,6 +17,10 @@ void print_array(int *a, int n)
 			printf("%d, ", a[i]);
 			i++;
 		}
+		else if (n < 0)
+		{
+			_putchar(10);
+			_putchar(10);
 		else
 		{
 			printf("%d\n", a[i]);
