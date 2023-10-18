@@ -19,4 +19,5 @@ void puts_half(char *str)
 		_putchar(str[l]);
 		l++;
 	}
+	_putchar(10);
 }
