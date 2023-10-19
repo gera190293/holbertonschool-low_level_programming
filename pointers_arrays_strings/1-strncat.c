@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *_strncnat - concatenate n bytes of the string
+ *_strncat - concatenate n bytes of the string
  *@dest: destination
  *@src: source
  *@n: bytes
