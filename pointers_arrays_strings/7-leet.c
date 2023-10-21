@@ -13,7 +13,7 @@ char *leet(char *s)
 	{
 		for (j = 0; j <= 7; j++)
 		{
-			if (s[j] == s2[j] || s[i] - 32 == s2[j])
+			if (s[i] == s2[j] || s[i] - 32 == s2[j])
 				s[i] = j + '0';
 		}
 		i++;
