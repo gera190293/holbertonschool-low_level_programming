@@ -1,4 +1,4 @@
-#include "main,h"
+#include "main.h"
 /**
  *leet - encode intro 1337
  *@s: string
