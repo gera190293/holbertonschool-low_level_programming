@@ -10,7 +10,7 @@ int Mul(int n)
 	int m = 2;
 
 	if (m * m != n)
-		return (Mul(m + 1);
+		return (Mul(m + 1));
 	if (m * m == n)
 		return (m);
 	return (-1);
