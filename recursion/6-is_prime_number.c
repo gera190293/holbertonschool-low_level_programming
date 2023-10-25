@@ -13,8 +13,7 @@ int CP(int n)
 		return (0);
 	if (n % m != 0 && m != n)
 		return (CP(m + 1));
-	if (m = n)
-		return (1);
+	return (1);
 }
 /**
  *is_prime_number - confir prime number
