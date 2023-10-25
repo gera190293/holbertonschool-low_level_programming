@@ -5,12 +5,10 @@
  *Return: result
  *
  */
-int Mul(int n)
+int Mul(int n, int m)
 {
-	int m = 2;
-
 	if (m * m != n)
-		return (Mul(m + 1));
+		return (Mul(n, m + 1));
 	if (m * m == n)
 		return (m);
 	return (-1);
@@ -23,9 +21,11 @@ int Mul(int n)
  */
 int _sqrt_recursion(int n)
 {
+	int m;
+
 	if (n < 0)
 		return (-1);
 	if (n == 1 || n == 0)
 		return (1);
-	return (Mul(n));
+	return (Mul(n, m));
 }
