@@ -5,7 +5,7 @@
  *Return: result
  *
  */
-int Mul(int *n)
+int Mul(int n)
 {
 	int m = 2;
 
