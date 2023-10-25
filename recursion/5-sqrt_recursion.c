@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- *Mul - check the result 
+ *Mul - check the result
  *@n: variable from main
+ *@m: variablei
  *Return: result
  *
  */
