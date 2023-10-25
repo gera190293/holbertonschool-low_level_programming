@@ -9,9 +9,9 @@ int CP(int n)
 {
 	int m = 2;
 
-	if (n / m % 0 && m != n)
+	if (n % m == 0 && m != n)
 		return (0);
-	if (n / m !% 0 && m != n)
+	if (n % m != 0 && m != n)
 		return (CP(m + 1));
 	if (m = n)
 		return (1);
