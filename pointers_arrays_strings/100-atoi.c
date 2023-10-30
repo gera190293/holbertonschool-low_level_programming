@@ -11,7 +11,9 @@ int _atoi(char *s)
 	int si = 1;
 
 	while (*s == ' ')
+	{
 		s++;
+	}
 	if (*s == '-')
 	{
 		si = -1;
