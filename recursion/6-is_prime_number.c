@@ -11,7 +11,7 @@ int CP(int n)
 
 	if (n % m == 0 && m * 2 == n)
 		return (1);
-	return (CP(n - 1);
+	return (CP(n - 1));
 }
 /**
  *is_prime_number - confir prime number
