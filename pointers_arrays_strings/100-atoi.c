@@ -8,11 +8,11 @@ int _atoi(char *s)
 {
 	int i = 0;
 	int r = 0;
-	int s = 1;
+	int si = 1;
 
 	if (s[0] == '-')
 	{
-		s = -1;
+		si = -1;
 		i = 1;
 	}
 	while (s[i] >= '0' && s[i] <= '9')
@@ -20,5 +20,5 @@ int _atoi(char *s)
 		r = r * 10 + (s[i] - '0');
 		i++;
 	}
-	return (s * r);
+	return (si * r);
 }
