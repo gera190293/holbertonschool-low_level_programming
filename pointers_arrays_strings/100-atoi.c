@@ -20,13 +20,13 @@ int _atoi(char *s)
 	while (*s >= '0' && *s <= '9')
 	{
 		int digit = *s - '0';
-		
+
 		if (r > (INT_MAX - digit) / 10)
 		{
-			return si == 1 ? INT_MAX : INT_MIN;
+			return (si == 1 ? INT_MAX : INT_MIN);
 		}
 		r = r * 10 + digit;
 		s++;
 	}
-	return si * r;
+	return (si * r);
 }
