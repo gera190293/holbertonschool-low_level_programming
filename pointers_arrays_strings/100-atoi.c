@@ -28,6 +28,6 @@ int _atoi(char *s)
 			break;
 		i++;
 	}
-	r *= minus;
+	r *= m;
 	return (r);
 }
