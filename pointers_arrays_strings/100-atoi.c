@@ -28,5 +28,7 @@ int _atoi(char *s)
 		r = r * 10 + digit;
 		s++;
 	}
+	while (*s != '\0' && (*s < '0' || *s > '9'))
+		s++;
 	return (si * r);
 }
