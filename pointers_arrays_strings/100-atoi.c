@@ -1,5 +1,4 @@
 #include "main.h"
-#include <limits.h>
 /**
  *_atoi - convert char into int
  *@s: string
@@ -7,28 +6,28 @@
  */
 int _atoi(char *s)
 {
-	int re = 0;
-	int si = 1;
+	short b;
+	int i, m , r;
 
-	while (*s)
+	i = 0;
+	r = 0;
+	b = 0;
+	m = -1;
+
+	while (s[i] != '\0')
 	{
-		if (*s == '-')
+		if (s[i] == '-')
+			m *= -1;
+		if (s[i] >= '0' && s[i] <= '9')
 		{
-			si = -1;
+			r *= 10;
+			r -= (s[i] - '0');
+			b = 1;
 		}
-		else if (*s == '+')
-		{
-			si = 1;
-		}
-		else if (*s >= '0' && *s <= '9')
-		{
-			re = re * 10 + (*s - '0');
-		}
-		else
-		{
+		else if (b == 1)
 			break;
-		}
-		s++;
+		i++;
 	}
-	return (re * si);
+	r *= minus;
+	return (r);
 }
