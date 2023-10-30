@@ -7,7 +7,7 @@
  */
 int CP(int n)
 {
-	int m = 2;
+	int m = n - (n - 2);
 
 	if (m == n)
 		return (1);
