@@ -14,7 +14,7 @@ int CP(int n)
 	if (n % m == 0)
 		return (0);
 	if (n % m != 0)
-		return (CP(m + 1));
+		return (CP(m - 1));
 	return (1);
 }
 /**
