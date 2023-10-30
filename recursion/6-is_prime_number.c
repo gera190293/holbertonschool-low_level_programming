@@ -7,15 +7,15 @@
  */
 int CP(int n)
 {
-	int m = n - (n - 2);
+	int m = 3;
 
-	if (m == n)
-		return (1);
-	if (n % m == 0)
+	if (n % 2 == 0)
 		return (0);
-	if (n % m != 0)
-		return (CP(m - 1));
-	return (1);
+	if (n % m == 0)
+		return (CP(m + 1));
+	if (n % m == 0 && m == n)
+		return (1);
+	return (0);
 }
 /**
  *is_prime_number - confir prime number
