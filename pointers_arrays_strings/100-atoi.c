@@ -7,27 +7,26 @@
  */
 int _atoi(char *s)
 {
-	int i = 0;
 	int r = 0;
 	int si = 1;
 
-	while (s[i] == ' ')
-		i++;
-	if (s[i] == '-')
+	while (*s == ' ')
+		s++;
+	if (*s == '-')
 	{
 		si = -1;
-		i++;
+		s++;
 	}
-	while (s[i] >= '0' && s[i] <= '9')
+	while (*s >= '0' && *s <= '9')
 	{
-		int di = s[i] - '0';
-
-		if (r > (INT_MAX - di) / 10)
+		int digit = *s - '0';
+		
+		if (r > (INT_MAX - digit) / 10)
 		{
 			return si == 1 ? INT_MAX : INT_MIN;
 		}
-		r = r * 10 + di;
-		i++;
+		r = r * 10 + digit;
+		s++;
 	}
-	return (si * r);
+	return si * r;
 }
