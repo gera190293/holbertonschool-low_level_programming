@@ -29,6 +29,8 @@ int _atoi(char *s)
 		s++;
 	}
 	while (*s != '\0' && (*s < '0' || *s > '9'))
+	{
 		s++;
+	}
 	return (si * r);
 }
