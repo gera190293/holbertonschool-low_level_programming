@@ -11,11 +11,9 @@ char *str_concat(char *s1, char *s2)
 {
 	char *s3;
 
-	if (s1 == NULL && s2 == NULL)
-		return (NULL);
 	strcat(s1, s2);
-	s3 = s1;
 	s3 = malloc(sizeof(*s3) * (strlen(s1) + 1));
+	strcpy(s3, s1);
 	if (s3 == NULL)
 		return (NULL);
 	return (s3);
