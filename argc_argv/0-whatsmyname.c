@@ -4,9 +4,10 @@
  *main - Write a program that prints its name, followed by a new line.
  *@argc: number of arguments
  *@argv: pointer to arguments
- *
+ *return: zero
  */
-void main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
-	printf("%s", argv[0])
+	printf("%s", argv[0]);
+	return (0);
 }
