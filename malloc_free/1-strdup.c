@@ -13,7 +13,7 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 		return (NULL);
-	malloc(sizeof(*str2) * (strlen(str) + 1));
+	str2 = malloc(sizeof(*str2) * (strlen(str) + 1));
 	strcpy(str2, str);
 	return (str2);
 }
