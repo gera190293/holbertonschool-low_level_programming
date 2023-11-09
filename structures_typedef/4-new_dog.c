@@ -15,7 +15,7 @@ int sl(char *s)
 	int l = 0;
 
 	while (*s++)
-		len++;
+		l++;
 
 	return (l);
 }
