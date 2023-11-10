@@ -17,7 +17,7 @@ void print_all(const char * const format, ...)
 	va_start(vl, format);
 
 	while (format && format[f])
-		i++;
+		f++;
 	while (format && format[i])
 	{
 		if (i == (f - 1))
