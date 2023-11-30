@@ -1,6 +1,6 @@
  #include "lists.h"
  /**
-  *delete_dnodeint_at_index- function that deletes the node at index
+  *delete_dnodeint_at_index - function that deletes the node at index
   *of a dlistint_t linked list
   *@head: head node
   *@index: is the index of the node that should be deleted. Index starts at 0
@@ -8,7 +8,7 @@
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-    dlistint_t *node;
+	dlistint_t *node;
 	unsigned int i = 0;
 
 	if ((*head) == NULL)
