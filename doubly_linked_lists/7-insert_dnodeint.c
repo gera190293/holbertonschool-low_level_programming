@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * insert_dnodeint_at_index - function that inserts 
+ * insert_dnodeint_at_index - function that inserts
  * a newnode node at a given position
  * @h: head node
  * @idx: index to delete
@@ -17,8 +17,6 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	if (newnode == NULL)
 		return (NULL);
 	newnode->n = n;
-	newnode->prev = NULL;
-	newnode->next = NULL;
 	if ((*h) == NULL)
 	{
 		if (idx == 0)
